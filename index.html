@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
 	<title>外国电影</title>
+
 	<style type="text/css">
 		*{
 			margin: 0px;
@@ -12,20 +14,21 @@
 		#one{
 			/*float: left;*/
 			width: 1000px;
-			height: 2300px;
+			height: 2500px;
 			margin: 0px auto;
 			background-color:#E8E8E8; 
 			border-left: 2px solid #D0D0D0;
 			border-right: 2px solid #D0D0D0;
-
 		}
 		#two img{
 			float: left;
 			width: 64px;
 			height: 64px;
+
 		}
 		#three{
 			transform: translateY(30px);
+
 		}
 		#three a{
 			padding-left: 30px;
@@ -36,6 +39,24 @@
 		#three a:hover{
 			color: red;
 		}
+
+		#inner{
+			width: 120px;
+			height: 100px;
+			position: absolute;
+			top: 20px;
+			left: 510px;
+            display:none;
+        }
+
+        #inner li{
+        	border:1px solid gray;
+        	background-color: white;
+        }
+
+        #b:hover #inner{
+            display:block;
+        }
 		#four{
 			height: 80px;
 			transform: translateY(85px);
@@ -172,6 +193,36 @@
 			float: right;
 			transform: translateY(-434.8px);
 		}
+		.ten{
+			width: 100%;
+			height: 220px;
+			border-top: 1px solid #D0D0D0;
+			transform: translateY(40px);
+
+		}
+		.eleven{
+			width: 30%;
+			margin-left: 50px;
+		}
+		.eleven a:hover{
+			color: red;
+		}
+		.twelve{
+			width: 30%;
+			margin-left: 50px;
+			transform: translateX(350px) translateY(-230px);
+		}
+		.twelve a:hover{
+			color: red;
+		}
+		.thirteen{
+			width: 30%;
+			margin-left: 50px;
+			transform: translateX(700px) translateY(-418px);
+		}
+		.thirteen a:hover{
+			color: red;
+		}
 		.ending{
 			width: 100%;
 			height:50px;
@@ -200,13 +251,22 @@
 				
 				<div id="three">
 					<ul>
-						<li><a href="#">我的</a></li>
+						
 					    <li><a class="active" href="#">首页</a></li>
 					    <li><a href="#ggoo">资讯</a></li>
 					    <li><a href="#go">正在热映</a></li>
 					    <li><a href="#goto" >即将上映</a></li>
 					    <li id="num"><a  href="#">联系我们</a></li>
-					    <li><a href="#">广告</a></li>
+					    <li id="b"><a href="#">我的</a>
+							<div id="inner">
+								<ul>
+					                <li>账号管理</li>
+					                <li>关于系统</li>
+					                <li>设置</li>
+					                <li>个人中心</li>
+					            </ul>
+							</div>
+				        </li>
 					    
 					</ul>
 				</div>
@@ -417,9 +477,7 @@
 								<p>评分4.2</p>
 								</div>
 							</div>
-
-					</div>
-						
+					</div>	
 				</div>
 			</div>
 			<div id="news">
@@ -441,6 +499,7 @@
 					<a href="https://t.cj.sina.com.cn/articles/view/2833534593/a8e44e8102000q8v2">Read more</a>
 				</div>
 				<br>
+				
 				<div class="content">
 					<p class="date">20.11.13</p>
 					<h4>电影大佬上书政府救市，欧美院线再次迎来停摆危局</h4>
@@ -467,17 +526,87 @@
 					<a href="#">Read more</a>
 				</div>
 			</div>
-			<div class="ending">
+			<div class="ten">
+				<div class="eleven">
+					<br>
+					<br>
+					<h4>热门导航</h4>
+					<br>
+					<p>
+					<a href="#">喜剧</a> <span> </span>
+					<a href="#">灾难</a> <span> </span>
+					<a href="#">惊悚</a> <span> </span>
+					<br>
+					<br>
+					<a href="#">剧情 </a> <span> </span>
+					<a href="#">动作</a> <span> </span>
+					<a href="#">科幻</a> <span> </span>
+					<br>
+					<br>
+					<a href="#">会员</a> <span> </span>
+					<a href="#">发现</a> <span> </span>
+					<a href="#">片库</a> <span> </span>
+					<br>
+					<br>
+					<a href="#">宣传</a> <span> </span>
+					<a href="#">预告</a> <span> </span>
+					<a href="#">广告 </a>
+				</p>
+				</div>
+				<div class="twelve">
+					<br>
+					<br>
+					<h4>用户协议</h4>
+					<br>
+					<p>
+					<a href="#">用户协议</a> <span> </span>
+					<a href="#">历史协议文本</a> <span> </span>
+					
+					<br>
+					<br>
+					<a href="#">知识产权声明</a> <span> </span>
+					<a href="#">隐私政策</a> <span> </span>
+					
+					<br>
+					<br>
+					<a href="#">账号注销协议</a> <span> </span>
+					
+					<a href="#">反盗链声明</a>
+				</p>
+				</div>
+				<div class="thirteen">
+					<br>
+					<br>
+					<h4>服务</h4>
+					<br>
+					<p>
+					<a href="#">侵权服务</a> <span> </span>
+					<a href="#">广告服务</a> <span> </span>
+					
+					<br>
+					<br>
+					<a href="#">在线反馈</a> <span> </span>
+					<a href="#">联系我们</a> <span> </span>
+					
+					<br>
+					<br>
+					<a href="#">关于我们</a> <span> </span>
+					<a href="#">繁体字</a> <span> </span>
+					<a href="#">加入我们</a>
+				</p>
+				</div>
+			</div>
+			<div id="d" class="ending">
 				<p>
 					<a href="#">首页</a> <span>|</span>
-					<a href="#">新闻</a> <span>|</span>
-					<a href="#">本影院</a> <span>|</span>
-					<a href="#">即将上映 </a> <span>|</span>
-					<a href="#">预告</a> <span>|</span>
-					<a href="#">热门排行</a> <span>|</span>
-					<a href="#">最受欢迎</a> <span>|</span>
-					<a href="#">广告</a> <span>|</span>
-					<a href="#">联系我们 </a>
+					<a href="#d">新闻</a> <span>|</span>
+					<a href="#d">本影院</a> <span>|</span>
+					<a href="#d">即将上映 </a> <span>|</span>
+					<a href="#d">预告</a> <span>|</span>
+					<a href="#d">热门排行</a> <span>|</span>
+					<a href="#d">最受欢迎</a> <span>|</span>
+					<a href="#d">广告</a> <span>|</span>
+					<a href="#d">联系我们 </a>
 				</p>
 				<p> &copy; 2021 菜鸟影视.SW.HZF.LWL.WZP Made <a href="#" target="_blank" title="菜鸟影视有限公司">cainiaoyingshi.com</a></p>
 			</div>
